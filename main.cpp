@@ -78,6 +78,7 @@ void newAndExit(){
  random = rand();
  std::string filename = std::to_string(random) + ".txt";
  std::ofstream file(filename);
+ file.close();
  saveAndExit(filename.c_str());
 }
  // Constructor, abhi ke liye sirf default
